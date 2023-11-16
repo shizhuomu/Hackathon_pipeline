@@ -69,7 +69,7 @@ func main() {
 
 	log.Println("Starting pipeline")
 	// run pipeline
-	cmd := exec.Command("python3.8", "/service/main.py", inputDir, outputDir)
+	cmd := exec.Command("python3.9", "/service/main.py", inputDir, outputDir)
 	cmd.Dir = "/service"
 	var out strings.Builder
 	var stderr strings.Builder
